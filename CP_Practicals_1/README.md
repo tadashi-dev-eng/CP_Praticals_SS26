@@ -45,3 +45,41 @@ While solving the problem I learned a few lessons :
 3. input and output checks
 
 ![alt text](Assets/q1.png)
+
+## Problem 2 — Reverse the Array
+
+In an array of integers, it prints the element in their original order, then reverse the array and print the elements in reversed order. The goal is to demonstrate reversing a sequence in-place using C++ STL.
+
+### Algorithm explanation
+
+Initialize a vector<int> with the given elements.
+
+Print the vector contents using a for loop (original order).
+
+Call reverse(arr.begin(), arr.end()) to reverse the elements in-place.
+
+Print the reverse order.
+
+#### Time complexity analysis : O(n)
+
+Printing the array once: O(n)
+
+Reversing the array with reverse: O(n)
+
+Printing again: O(n)
+
+Total: O(n) (linear time)
+
+#### Space complexity analysis : O(n)
+
+Uses the original array in-place.
+
+No additional arrays or large data structures are allocated.
+
+Space complexity: O(1) extra space (ignoring the input vector itself).
+
+#### Reflection
+
+I solved it by first ensuring the array type was specified (vector<int>), then separating concerns printing the original, performing the reverse operation, and printing the result. This reinforces that reverse works in-place and that careful ordering lets before/after states without copying the array.
+
+![alt text](Assets/q2.png)
