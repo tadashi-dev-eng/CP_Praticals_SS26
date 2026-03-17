@@ -160,6 +160,8 @@ Uses a deque that stores at most k indices
 
 Using a deque to track candidate maxima is efficient because it avoids redundant comparisons and gives a true linear-time solution. The key insight is that once a larger element enters the window, smaller elements to its left become “useless” and can be discarded safely.
 
+![alt text](Assets/image.png)
+---
 
 ## Problem 5 — Balanced Line Problem
 
